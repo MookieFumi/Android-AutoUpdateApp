@@ -1,7 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    >
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+      android:id="@+id/toolbar"
+      android:minHeight="?attr/actionBarSize"  
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+    </android.support.v7.widget.Toolbar>
+    <Button
+        android:text="Click on me!"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/showCurrentVersionButton" />
+    <Button
+        android:text="Force download"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/forceDownloadButton" />
+    <TextView
+        android:text="Hay que tener en cuenta un par de detalles, arriba en el servidor debe estar disponible tanto el apk firmado como un fichero de texto con el mismo nombre que el apk que debe contener el versión code. Así mismo, en el terminal tenemos que tener activado la opción de instalar desde orígenes desconocidos."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1"
+        android:padding="5dp" />
 </LinearLayout>
